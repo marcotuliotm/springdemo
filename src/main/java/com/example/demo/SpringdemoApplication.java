@@ -8,10 +8,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @SpringBootApplication
-public class SrpingdemoApplication {
+public class SpringdemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run( SrpingdemoApplication.class, args );
+        SpringApplication.run( SpringdemoApplication.class, args );
     }
 
     @Bean
