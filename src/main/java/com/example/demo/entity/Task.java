@@ -15,6 +15,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Version;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Getter
@@ -34,7 +35,13 @@ public class Task {
 
     @Version
     private int version;
+
+    @NotNull
     private String title;
+
+    @NotNull
     private STATUS status;
+
+
     private String description;
 }

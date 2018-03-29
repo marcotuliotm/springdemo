@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.dao.TaskRepository;
 import com.example.demo.entity.Task;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,9 +10,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@AllArgsConstructor
 public class TaskServiceImpl implements TaskService {
 
-    @Autowired
+
     private TaskRepository repository;
 
     @Override
@@ -40,4 +42,5 @@ public class TaskServiceImpl implements TaskService {
     public List<Task> findAll() {
         return repository.findAll();
     }
+
 }
